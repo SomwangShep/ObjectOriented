@@ -1,0 +1,30 @@
+public class Mean implements IGrader
+{
+	protected IFilter m_filter;
+	protected int[] m_grades;
+	
+	//private IFilter m_IFilter;
+	
+	public Mean(int[] grads, IFilter filter) {
+
+		m_grades = grads;
+		m_filter = filter;
+    }
+    
+    @Override
+    public double grade()
+    {
+    	//these 2 lines below I was missed during the exam, I did not pass the filter
+    	if (m_filter != null)
+    		m_grades = m_filter.filter(m_grades);
+        return average();
+    }
+    
+    protected double average()
+    {
+        double sum = 0.0;
+        for (int i : m_grades)
+            sum += i;
+        return sum/m_grades.length;
+    }
+}

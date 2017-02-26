@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class DropBoth implements IFilter{
+	public int[] filter(int[] ary)
+	{
+	       int[] copy = new int[ary.length-2];
+	        Arrays.sort(ary);
+	        for (int i = 1; i < ary.length-1; i++)
+	            copy[i-1] = ary[i];
+	        ary = copy;
+	        return ary;
+	}
+
+}

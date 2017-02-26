@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Decision {
+	public Decision(){}
+	private String m_question;
+	private IDecision m_yes;
+	private IDecision m_no;
+	private String m_yesTerminate;
+	private String m_noTermiate;
+	
+	private static Scanner keyboard = new Scanner(System.in);
+	String input="";
+	
+	public void setYes(IDecision yes) {
+	}
+	
+	public void setNo(IDecision no) {
+	}	
+	
+	public  void setYesTerminal(String terminal){
+		
+	}
+	
+	public void setNoTerminal(String terminal){
+		
+	}
+	
+	public IDecision ask(){
+		
+		System.out.print("Do you want to buy a snowboard?");
+		input = keyboard.next().trim().toUpperCase();
+		
+		if (input.equalsIgnoreCase("y")){
+			System.out.print("Have you nowboard before?");
+			input = keyboard.next().trim().toUpperCase();
+			if 
+			
+		}
+		
+		return m_no;		
+	}
+}

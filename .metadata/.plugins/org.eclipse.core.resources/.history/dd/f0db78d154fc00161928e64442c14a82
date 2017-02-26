@@ -1,0 +1,9 @@
+
+public class Builder {
+	public Builder(){}
+	
+	public IDecision buildWizard() {
+		return null;
+	}
+
+}

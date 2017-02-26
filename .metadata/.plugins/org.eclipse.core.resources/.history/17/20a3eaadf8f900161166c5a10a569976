@@ -1,0 +1,18 @@
+
+public class Median implements IGrader{
+	protected IFilter m_filter;
+	protected int[] m_grades;
+	
+	//private IFilter m_IFilter;
+	
+	public Median(int[] grades, IFilter filter) {
+		m_grades = grades;
+		m_filter = filter;		
+	}
+	public double grade() {
+		return 0;
+	}
+	protected double median() {
+		return 0;
+	}
+}
